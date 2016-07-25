@@ -21,7 +21,6 @@ user.location = req.body.location;
 user.language = req.body.language;
 user.comment = req.body.comment;
 user.title = 'Survey Form';
-console.log(user);
 res.render("result", user);
 })
 
@@ -31,7 +30,6 @@ app.get('/result', function(req, res){
 
 
 app.listen(process.env.PORT || 8000, function(){
-  console.log('listening on', app.address().port);
 });
 
 
