@@ -30,8 +30,8 @@ app.get('/result', function(req, res){
 })
 
 
-http.listen(process.env.PORT || 8000, function(){
-  console.log('listening on', http.address().port);
+app.listen(process.env.PORT || 8000, function(){
+  console.log('listening on', app.address().port);
 });
 
 
